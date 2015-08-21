@@ -10,6 +10,14 @@ public class TurtleWorld
         turtle.penDown();
         turtle.forward(50);
         turtle.hide();
-        turtle.turnleft
+        
+        
+        Turtle turtle1 = new Turtle(1, 3, turtleWorld);
+        turtle.setPenColor(Color.green);
+        turtle.penDown();
+        
+    
+
+       
     }
 }
