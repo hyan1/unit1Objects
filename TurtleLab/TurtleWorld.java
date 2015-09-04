@@ -29,10 +29,24 @@ public class TurtleWorld
         turtle4.setPenWidth(3);
         turtle4.penDown();
         
+        Turtle turtle5 = new Turtle(turtleWorld);
+        turtle5.setPenColor(Color.BLUE);
+        turtle5.setPenWidth(3);
+        turtle5.penDown();
+        
+        Turtle turtle6 = new Turtle(turtleWorld);
+        turtle6.setPenColor(Color.BLUE);
+        turtle6.setPenWidth(3);
+        turtle6.penDown();
+        
+        turtle5.turn(180);
+        turtle6.turn(180);
         int ang = 10;
         int ang1 = -10;
         int k = 0;
         int i = 0;
+        int j = 0;
+        int u = 0;
         while (k <= 30)
         {
             turtle3.turn(ang);
@@ -47,8 +61,24 @@ public class TurtleWorld
             ang1 -= 2;
             i += 1;
         }
+        while (j <=30)
+        {
+            turtle5.turn(ang);
+            turtle5.backward(40);
+            ang += 2;
+            j += 1;
+        }
+        while (u <=30)
+        {
+            turtle6.turn(ang1);
+            turtle6.backward(40);
+            ang1 -= 2;
+            u += 1;
+        }
         turtle3.hide();
         turtle4.hide();
+        turtle5.hide();
+        turtle6.hide();
         
         int x = 0;
         int y = 10;
